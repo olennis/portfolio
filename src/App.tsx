@@ -1,3 +1,10 @@
+import { GlobalStyle } from "./styles/global";
+
 export const App = () => {
-  return <div className="App">초기</div>;
+  return (
+    <div className="App">
+      <GlobalStyle />
+      <div>초기세팅</div>
+    </div>
+  );
 };
