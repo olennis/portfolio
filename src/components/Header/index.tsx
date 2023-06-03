@@ -2,7 +2,7 @@ import {
   Header as HeaderComponent,
   HeaderLeftWrapper,
   HeaderRightWrapper,
-} from "../../styles/styled";
+} from "./styled";
 import { BsApple, BsBatteryCharging } from "react-icons/bs";
 import {
   SiJavascript,
