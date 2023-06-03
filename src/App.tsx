@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { GlobalStyle } from "./styles/global";
-import { Intro } from "./components/Intro";
-import { Header } from "./components/Header";
+import { Intro, Header, Dock } from "./components";
 
 export const App = () => {
   const [isIntro, setIsIntro] = useState<boolean>(true);
@@ -18,7 +17,9 @@ export const App = () => {
       ) : (
         <>
           <Header />
-          <main />
+          <main>
+            <Dock />
+          </main>
         </>
       )}
     </div>

@@ -6,7 +6,7 @@ import {
   IntroInputWrapper,
   IntroName,
   IntroWrapper,
-} from "../../styles/styled";
+} from "./styled";
 import { BsArrowRightCircle } from "react-icons/bs";
 
 interface IntroProps {
@@ -35,7 +35,7 @@ export const Intro = ({ completeIntro }: IntroProps) => {
         <IntroIcon />
         <IntroName>Donghun</IntroName>
         <IntroInputWrapper>
-          <IntroInput value={password} />
+          <IntroInput value={password} readOnly />
           <IntroInputArrowIcon>
             <BsArrowRightCircle color="gray" />
           </IntroInputArrowIcon>
