@@ -36,21 +36,17 @@ export const IntroInputWrapper = styled.div`
 
 export const IntroInput = styled.input`
   border: none;
-  padding-left: 10px;
+  padding: 4px 10px 0;
   width: 200px;
   height: 32px;
   border-radius: 16px;
 `;
 
-export const IntroInputArrowIcon = styled.span`
-  display: block;
+export const IntroInputArrowIcon = styled.div`
   position: absolute;
-  top: 4px;
-  right: -6px;
+  top: 8px;
+  right: -10px;
   border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  border: 1px solid gray;
   background-image: url("/icons/arrow-right.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,4 +54,40 @@ export const IntroInputArrowIcon = styled.span`
 
 export const IntroMessage = styled.p`
   margin-top: 18px;
+`;
+
+export const Header = styled.header`
+  background-color: #000;
+  display: flex;
+  font-size: 14px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  opacity: 0.6;
+  color: #fff;
+  height: 28px;
+`;
+
+export const HeaderLeftWrapper = styled.div`
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  span {
+    &:hover {
+      cursor: pointer;
+      font-weight: bold;
+    }
+  }
+`;
+
+export const HeaderRightWrapper = styled.div`
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  /* span {
+    &:hover {
+      cursor: pointer;
+      font-weight: bold;
+    }
+  } */
 `;
