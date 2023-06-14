@@ -8,10 +8,9 @@ interface DockData {
 }
 
 const CAREERDATA: DockData[] = [
-  { icon: "codestates-student", content: ["", ""] },
-  { icon: "codestates-cse", content: ["", ""] },
-  { icon: "dk-techin", content: ["", ""] },
-  { icon: "codestates-se", content: ["", ""] },
+  { icon: "코드스테이츠", content: ["", ""] },
+  { icon: "디케이테크인", content: ["", ""] },
+  { icon: "코드스테이츠", content: ["", ""] },
 ];
 const STUDYDATA: DockData[] = [
   { icon: "github", content: ["", ""] },
@@ -30,11 +29,11 @@ export const Dock = () => {
       onMouseMove={(e) => handlePageX(e.pageX)}
       onMouseLeave={() => handlePageX(Infinity)}>
       {CAREERDATA.map((data) => (
-        <DockIcon key={data.icon} mouseX={mouseX} />
+        <DockIcon key={data.icon} mouseX={mouseX} name={data.icon} />
       ))}
       <Divider />
       {STUDYDATA.map((data) => (
-        <DockIcon key={data.icon} mouseX={mouseX} />
+        <DockIcon key={data.icon} mouseX={mouseX} name={data.icon} />
       ))}
     </DockWrapper>
   );
