@@ -14,8 +14,7 @@ export const DockWrapper = styled.div`
   bottom: 20px;
   transform: translateX(-50%);
 
-  background-color: #000;
-  opacity: 0.2;
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 12px;
 `;
 
