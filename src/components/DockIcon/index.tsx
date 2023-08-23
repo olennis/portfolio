@@ -2,15 +2,30 @@ import { useRef, useState } from "react";
 import { IconContainer, IconWrapper, TooltipWrapper } from "./styled";
 import { useTransform, useSpring } from "framer-motion";
 
+interface StackItem {
+  text: string;
+  icon: string;
+}
 interface DockIconProps {
   mouseX: MotionValue;
   name?: string;
+  icon: string;
+  content: StackItem[];
+  isIntern?: boolean;
+  duration?: string;
 }
 
 import type { MotionValue } from "framer-motion";
 import { Stack } from "../Stack";
 
-export const DockIcon = ({ mouseX, name }: DockIconProps) => {
+export const DockIcon = ({
+  mouseX,
+  name = "",
+  icon,
+  content,
+  isIntern,
+  duration,
+}: DockIconProps) => {
   const [isHover, setIsHover] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -32,20 +47,20 @@ export const DockIcon = ({ mouseX, name }: DockIconProps) => {
     <IconContainer>
       {isHover && (
         <Stack
-          stackProps={[
-            { text: "1", icon: "" },
-            { text: "2", icon: "" },
-            { text: "3", icon: "" },
-            { text: "4", icon: "" },
-          ]}
+          stackProps={content}
+          isIntern={isIntern}
+          duration={duration}
+          title={name}
+          icon={icon}
         />
       )}
-      {isHover && <TooltipWrapper>{name}</TooltipWrapper>}
       <IconWrapper
+        src={icon}
         ref={ref}
         style={{ width }}
         onMouseEnter={() => setIsHover(true)}
-        onMouseLeave={() => setIsHover(false)}></IconWrapper>
+        onMouseLeave={() => setIsHover(false)}
+      />
     </IconContainer>
   );
 };
