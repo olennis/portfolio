@@ -7,11 +7,14 @@ export const IconContainer = styled.div`
   flex-direction: column;
 `;
 
-export const IconWrapper = styled(motion.div)`
+export const IconWrapper = styled(motion.div)<{ src: string }>`
   position: relative;
   width: 40px;
   aspect-ratio: 1/1;
   background-color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(${({ src }) => src});
   border-radius: 25%;
 `;
 

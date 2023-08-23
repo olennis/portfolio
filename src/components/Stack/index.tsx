@@ -1,7 +1,8 @@
 import {
-  CareerDate,
+  ContentText,
   DurationWrapper,
   Icon,
+  IconWrapper,
   InternText,
   StackItem,
   StackWrapper,
@@ -16,27 +17,41 @@ interface StackItem {
 }
 
 interface StackProps {
+  title: string;
+  isIntern?: boolean;
+  duration?: string;
   stackProps: StackItem[];
+  icon: string;
 }
 
-export const Stack = ({ stackProps }: StackProps) => {
+export const Stack = ({
+  stackProps,
+  isIntern,
+  duration = "",
+  title,
+  icon,
+}: StackProps) => {
   return (
     <StackWrapper>
       <TitleContainer>
         <TitleWrapper>
-          <Title>Codestates</Title>
-          <Icon />
+          <IconWrapper>
+            <Icon src={icon} />
+          </IconWrapper>
+          <Title>{title}</Title>
         </TitleWrapper>
         <DurationWrapper>
-          <span>20.11 - 21.03</span>
-          <InternText>intern</InternText>
+          <span>{duration}</span>
+          {isIntern && <InternText>intern</InternText>}
         </DurationWrapper>
       </TitleContainer>
       {stackProps.map((data, index) => {
         return (
           <StackItem key={data.text} index={index + 1}>
-            <CareerDate>00.00.00</CareerDate>
-            <Icon />
+            <ContentText>{data.text}</ContentText>
+            <IconWrapper>
+              <Icon src={data.icon} />
+            </IconWrapper>
           </StackItem>
         );
       })}
