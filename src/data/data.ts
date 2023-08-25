@@ -3,65 +3,66 @@ interface StackItem {
   icon: string;
 }
 
-interface DockData {
+export interface Data {
+  id: number;
+  title: string;
+  duration: string;
+  description: string;
+  content: string;
   icon: string;
-  name: string;
-  duration?: string;
-  isIntern?: boolean;
-  content: StackItem[];
+  isPersonal: boolean;
+  company: string;
 }
 
-export const CAREERDATA: DockData[] = [
+export const PROJECT_DATA: Data[] = [
   {
-    name: "코드스테이츠",
-    duration: "20.11 - 21.03",
-    isIntern: true,
-    content: [
-      { text: "운영자동화 백오피스 개발", icon: "/images/system.png" },
-      { text: "팀 편성 알고리즘 구현", icon: "/images/algorithm.png" },
-      { text: "수료생 체크인 진행", icon: "/images/checkin.png" },
-      { text: "수강생 대상 세션 진행", icon: "/images/session.png" },
-    ],
+    id: 0,
+    title: "URCLASS",
+    duration: "21.12 ~ 22.08",
+    description: "유어클래스 설명",
+    content: "유어클래스.gif url",
     icon: "/images/codestates.png",
+    isPersonal: false,
+    company: "codestates",
   },
   {
-    name: "디케이테크인",
-    duration: "21.05 - 21.12",
-    content: [
-      { text: "카카오 공동체 랜딩 페이지 제작", icon: "" },
-      { text: "카카오 뷰 이벤트 페이지 제작", icon: "" },
-      { text: "카카오 iLaaS 페이지 제작", icon: "" },
-      { text: "카카오 T 이벤트 페이지 제작", icon: "" },
-    ],
+    id: 1,
+    title: "COZ 어드민",
+    duration: "21.12 ~ 22.08",
+    description: "유어클래스 설명",
+    content: "유어클래스.gif url",
+    icon: "/images/urclass-admin.png",
+    isPersonal: false,
+    company: "codestates",
+  },
+  {
+    id: 2,
+    title: "BOWL",
+    duration: "22.08 ~ 23.08",
+    description: "bowl 설명",
+    content: "bowl.gif url",
+    icon: "/images/bowl.png",
+    isPersonal: false,
+    company: "codestates",
+  },
+  {
+    id: 3,
+    title: "BOWL 어드민",
+    duration: "22.08 ~ 23.08",
+    description: "bowl 어드민 설명",
+    content: "bowl 어드민.gif url",
+    icon: "/images/bowl-admin.png",
+    isPersonal: false,
+    company: "codestates",
+  },
+  {
+    id: 4,
+    title: "DKT",
+    duration: "21.05 ~ 21.12",
+    description: "디케이테크인 프로젝트 설명",
+    content: "디케이테크인.gif url",
     icon: "/images/dktechin.png",
-  },
-  {
-    name: "코드스테이츠",
-    duration: "21-12 ~ 현재",
-    content: [
-      { text: "운영자동화 백오피스 개발", icon: "/images/system.png" },
-      { text: "팀 편성 알고리즘 구현", icon: "/images/algorithm.png" },
-      { text: "수료생 체크인 진행", icon: "/images/checkin.png" },
-      { text: "수강생 대상 세션 진행", icon: "/images/session.png" },
-    ],
-    icon: "/images/codestates.png",
-  },
-];
-export const STUDYDATA: DockData[] = [
-  {
-    name: "github",
-    content: [
-      { text: "", icon: "" },
-      { text: "", icon: "" },
-    ],
-    icon: "",
-  },
-  {
-    name: "notion",
-    content: [
-      { text: "", icon: "" },
-      { text: "", icon: "" },
-    ],
-    icon: "",
+    isPersonal: false,
+    company: "dk techin",
   },
 ];

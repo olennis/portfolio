@@ -35,26 +35,9 @@ export const Stack = ({
     <StackWrapper>
       <TitleContainer>
         <TitleWrapper>
-          <IconWrapper>
-            <Icon src={icon} />
-          </IconWrapper>
           <Title>{title}</Title>
         </TitleWrapper>
-        <DurationWrapper>
-          <span>{duration}</span>
-          {isIntern && <InternText>intern</InternText>}
-        </DurationWrapper>
       </TitleContainer>
-      {stackProps.map((data, index) => {
-        return (
-          <StackItem key={data.text} index={index + 1}>
-            <ContentText>{data.text}</ContentText>
-            <IconWrapper>
-              <Icon src={data.icon} />
-            </IconWrapper>
-          </StackItem>
-        );
-      })}
     </StackWrapper>
   );
 };

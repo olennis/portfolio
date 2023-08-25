@@ -112,6 +112,13 @@ const globalStyle = css`
     background-image: url("/images/background.png");
     background-repeat: no-repeat;
     background-size: cover;
+
+    #root,
+    .App,
+    main {
+      height: 100%;
+      overflow: hidden;
+    }
   }
   ol,
   ul {

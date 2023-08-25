@@ -1,9 +1,14 @@
 import { DockIcon } from "../DockIcon";
 import { Divider, DockWrapper } from "./styled";
 import { useMotionValue } from "framer-motion";
-import { CAREERDATA, STUDYDATA } from "../../data/data";
+import { Data } from "../../data/data";
 
-export const Dock = () => {
+interface DockProps {
+  openWindow: (id: number) => void;
+  projectData: Data[];
+}
+
+export const Dock = ({ openWindow, projectData }: DockProps) => {
   const mouseX = useMotionValue(Infinity);
 
   const handlePageX = (pageX: number) => {
@@ -14,28 +19,16 @@ export const Dock = () => {
     <DockWrapper
       onMouseMove={(e) => handlePageX(e.pageX)}
       onMouseLeave={() => handlePageX(Infinity)}>
-      {CAREERDATA.map((data) => (
+      {projectData.map((data) => (
         <DockIcon
-          key={data.name}
+          onClick={() => openWindow(data.id)}
+          key={data.title}
           mouseX={mouseX}
-          name={data.name}
+          name={data.title}
           icon={data.icon}
-          content={data.content}
-          isIntern={data.isIntern}
-          duration={data.duration}
         />
       ))}
       <Divider />
-      {STUDYDATA.map((data) => (
-        <DockIcon
-          key={data.name}
-          mouseX={mouseX}
-          name={data.name}
-          icon={data.icon}
-          content={data.content}
-          isIntern={data.isIntern}
-        />
-      ))}
     </DockWrapper>
   );
 };
