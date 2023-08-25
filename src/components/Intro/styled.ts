@@ -17,6 +17,11 @@ export const IntroIcon = styled.div`
   height: 150px;
   border-radius: 50%;
   background-color: #fff;
+  aspect-ratio: 1/1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -10px;
+  background-image: url("/images/Donghun.png");
 `;
 
 export const IntroName = styled.strong`

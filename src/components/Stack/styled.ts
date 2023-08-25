@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const StackWrapper = styled.ul`
-  height: 340px;
+  height: 20px;
   margin-bottom: 15px;
   position: relative;
   color: white;

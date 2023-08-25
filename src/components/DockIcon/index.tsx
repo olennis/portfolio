@@ -1,30 +1,22 @@
-import { useRef, useState } from "react";
-import { IconContainer, IconWrapper, TooltipWrapper } from "./styled";
+import { MouseEventHandler, useRef, useState } from "react";
+import { IconContainer, Icon } from "./styled";
 import { useTransform, useSpring } from "framer-motion";
 
-interface StackItem {
-  text: string;
-  icon: string;
-}
 interface DockIconProps {
   mouseX: MotionValue;
   name?: string;
   icon: string;
-  content: StackItem[];
-  isIntern?: boolean;
-  duration?: string;
+  onClick: MouseEventHandler<HTMLDivElement>;
 }
 
 import type { MotionValue } from "framer-motion";
-import { Stack } from "../Stack";
+import { Tooltip } from "../Tooltip";
 
 export const DockIcon = ({
   mouseX,
   name = "",
   icon,
-  content,
-  isIntern,
-  duration,
+  onClick,
 }: DockIconProps) => {
   const [isHover, setIsHover] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -45,16 +37,9 @@ export const DockIcon = ({
 
   return (
     <IconContainer>
-      {isHover && (
-        <Stack
-          stackProps={content}
-          isIntern={isIntern}
-          duration={duration}
-          title={name}
-          icon={icon}
-        />
-      )}
-      <IconWrapper
+      {isHover && <Tooltip name={name} position="top" />}
+      <Icon
+        onClick={onClick}
         src={icon}
         ref={ref}
         style={{ width }}

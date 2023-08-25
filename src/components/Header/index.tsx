@@ -22,7 +22,7 @@ export const Header = () => {
       <HeaderLeftWrapper>
         <h1>
           <BsApple />
-          <span className="hidden_text">{"donghun's portfolio"}</span>
+          <span className="hidden_text">{"Donghun's Portfolio"}</span>
         </h1>
         <span>Donghun</span>
         <span>Contact</span>
