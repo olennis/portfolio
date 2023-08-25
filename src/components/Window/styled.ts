@@ -6,7 +6,8 @@ export const WindowContainer = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 600px;
+  width: 100%;
+  max-width: 760px;
   min-height: 400px;
   background-color: black;
   border-radius: 8px;

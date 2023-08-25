@@ -12,6 +12,8 @@ import {
   WindowHeader,
   WindowTitle,
 } from "./styled";
+import { ReactMarkdown } from "react-markdown/lib/react-markdown";
+import { MarkdownRenderer } from "../MarkdownRenderer";
 
 interface WindowProps {
   closeWindow: () => void;
@@ -20,7 +22,7 @@ interface WindowProps {
 
 const BUTTONS = [
   { theme: "close", color: "#EC685D" },
-  { theme: "dd", color: "#F4BF49" },
+  { theme: "minimize", color: "#F4BF49" },
   { theme: "expand", color: "#61C554" },
 ];
 
@@ -53,7 +55,7 @@ export const Window = ({ closeWindow, currentData }: WindowProps) => {
           </TitleWrapper>
           <ProjectIcon src={icon} />
         </ContentHeaderWrapper>
-        <Description>{description}</Description>
+        <MarkdownRenderer markdownContent={description} />
         {content}
       </WindowContentWrapper>
     </WindowContainer>

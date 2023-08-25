@@ -19,7 +19,9 @@ export const PROJECT_DATA: Data[] = [
     id: 0,
     title: "URCLASS",
     duration: "21.12 ~ 22.08",
-    description: "유어클래스 설명",
+    description: `#### 세부내용
+
+    > todo: React component preview markdown text.`,
     content: "유어클래스.gif url",
     icon: "/images/codestates.png",
     isPersonal: false,
