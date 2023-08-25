@@ -68,6 +68,12 @@ export const HeaderButton = styled.button<{ theme: string; color: string }>`
   }}
 `;
 
+export const TagList = styled.ul`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+`;
+
 export const WindowContentWrapper = styled.div`
   display: flex;
   flex-direction: column;

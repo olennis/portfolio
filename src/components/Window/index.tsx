@@ -6,6 +6,7 @@ import {
   HeaderButton,
   HeaderButtonWrapper,
   ProjectIcon,
+  TagList,
   TitleWrapper,
   WindowContainer,
   WindowContentWrapper,
@@ -14,6 +15,7 @@ import {
 } from "./styled";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import { MarkdownRenderer } from "../MarkdownRenderer";
+import { Tag } from "../Tag";
 
 interface WindowProps {
   closeWindow: () => void;
@@ -27,8 +29,16 @@ const BUTTONS = [
 ];
 
 export const Window = ({ closeWindow, currentData }: WindowProps) => {
-  const { title, duration, description, content, icon, isPersonal, company } =
-    currentData;
+  const {
+    title,
+    duration,
+    description,
+    content,
+    icon,
+    isPersonal,
+    company,
+    tags,
+  } = currentData;
 
   return (
     <WindowContainer>
@@ -55,6 +65,11 @@ export const Window = ({ closeWindow, currentData }: WindowProps) => {
           </TitleWrapper>
           <ProjectIcon src={icon} />
         </ContentHeaderWrapper>
+        <TagList>
+          {tags.map((tag, idx) => (
+            <Tag text={tag} key={`${tag}_${idx}`} />
+          ))}
+        </TagList>
         <MarkdownRenderer markdownContent={description} />
         {content}
       </WindowContentWrapper>

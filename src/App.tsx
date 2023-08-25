@@ -12,6 +12,7 @@ const initialData = {
   icon: "",
   isPersonal: false,
   company: "",
+  tags: [],
 };
 
 export const App = () => {
