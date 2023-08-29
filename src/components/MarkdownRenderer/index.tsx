@@ -1,4 +1,5 @@
 import MarkdownPreview from "@uiw/react-markdown-preview";
+import { MarkdownWrapper } from "./styled";
 
 export const MarkdownRenderer = ({
   markdownContent,
@@ -6,8 +7,8 @@ export const MarkdownRenderer = ({
   markdownContent: string;
 }) => {
   return (
-    <div>
+    <MarkdownWrapper>
       <MarkdownPreview source={markdownContent} />
-    </div>
+    </MarkdownWrapper>
   );
 };
