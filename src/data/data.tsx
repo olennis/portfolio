@@ -30,9 +30,32 @@ export const PROJECT_DATA: Data[] = [
     isPersonal: false,
     company: "dk techin",
     tags: ["vue", "nuxt", "jQuery", "ejs"],
-    description: "디케이테크인 프로젝트 설명",
-    content: "",
+    description: `#### Introduce\n dk techin에서 카카오 공동체의 랜딩페이지, 이벤트 페이지 작업을 진행했습니다.
+    \n 
+
+    - 카카오 엔터테인먼트 랜딩 페이지 (https://kakaoent.com) 작업
+    - 카카오 i laas 랜딩 페이지 (https://kakaoilaas.com) 작업
+    - 카카오 뷰 이벤트 페이지 (카카오 이모티콘 증정) 작업
+    - 카카오 T 이벤트 페이지 (음주운전 예방) 작업
+    `,
+    content: (
+      <Wrapper>
+        <img
+          src="/images/project/dkt1.png"
+          width="100%"
+          height="auto"
+          alt="kakao ent"
+        />
+        <img
+          src="/images/project/dkt2.png"
+          width="100%"
+          height="auto"
+          alt="kakao ent"
+        />
+      </Wrapper>
+    ),
   },
+
   {
     id: 1,
     title: "URCLASS",
@@ -72,7 +95,6 @@ export const PROJECT_DATA: Data[] = [
   {
     id: 2,
     title: "COZ 어드민",
-    link: "bowl.codestates.com",
     duration: "21.12 ~ 22.08",
     icon: "/images/urclass-admin.png",
     isPersonal: false,
@@ -89,14 +111,15 @@ export const PROJECT_DATA: Data[] = [
   {
     id: 3,
     title: "BOWL",
+    link: "bowl.codestates.com",
     duration: "22.08 ~ 23.08",
     icon: "/images/bowl.png",
     isPersonal: false,
     company: "codestates",
     tags: ["typescript", "nextJS", "react-query", "emotion"],
     description: `#### Introduce\n BOWL은 코드스테이츠 수강생들의 학습을 돕기 위한 서비스입니다. 기존 urclass 제품이 유저가 일방적으로 수용할 수 밖에 없는 형태였기 때문에, 프로젝트 기반의 LMS 필요성이 높아져 BOWL을 개발 하게 됐습니다. 
-    \n 또한 urclass는 수강생들의 학습뿐만 아니라 코드스테이츠 과정 지원, 지원자 선별, 파트너사 연결, 수강료 납부 등의 기능으로 유저에게 가치를 전달합니다.
-    \n 저는 urclass에서 교육,콘텐츠 퍼널에서 프론트엔드 개발을 담당했고 출결시스템 개발과 학습페이지 개발을 진행했습니다.
+    \n 수강생 유저는 카테고리에 맞게 프로젝트를 진행 할 수 있고, 제출 할 수 있습니다. 수강생 유저의 제출을 확인하면 리뷰어 유저에게 알림이 가게 되고, 리뷰가 진행됩니다. 1차 리뷰 이후 수강생 유저는 수정을 거쳐 최종 리뷰를 받을 수 있게 되고 2차 리뷰를 끝으로 프로세스는 종료됩니다.
+    \n 추후 urclass의 이전을 목표로 콘텐츠 뷰어의 기능까지 개발하였고, 영상 콘텐츠 및 텍스트 콘텐츠의 전달과 수강생 유저의 진도율을 확인 할 수 있었습니다.
     `,
     content: (
       <Wrapper>

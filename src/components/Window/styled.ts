@@ -57,10 +57,23 @@ export const HeaderButton = styled.button<{ theme: string; color: string }>`
           color: #3d4043;
         }
       `;
-    } else {
+    } else if (theme === "minimize") {
       return css`
         &:hover::before {
           content: "ㅡ";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 8px;
+          font-weight: bold;
+          color: #3d4043;
+        }
+      `;
+    } else {
+      return css`
+        &:hover::before {
+          content: "+";
           position: absolute;
           top: 50%;
           left: 50%;
