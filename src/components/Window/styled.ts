@@ -9,11 +9,17 @@ export const WindowContainer = styled.div`
   width: 100%;
   max-width: 760px;
   min-height: 400px;
+  max-height: 1000px;
   background-color: black;
   border-radius: 8px;
+  overflow: auto;
 `;
 
 export const WindowHeader = styled.header`
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
   display: flex;
   align-items: center;
   background-color: #3d4043;
@@ -51,10 +57,23 @@ export const HeaderButton = styled.button<{ theme: string; color: string }>`
           color: #3d4043;
         }
       `;
-    } else {
+    } else if (theme === "minimize") {
       return css`
         &:hover::before {
           content: "ㅡ";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 8px;
+          font-weight: bold;
+          color: #3d4043;
+        }
+      `;
+    } else {
+      return css`
+        &:hover::before {
+          content: "+";
           position: absolute;
           top: 50%;
           left: 50%;
@@ -72,6 +91,12 @@ export const TagList = styled.ul`
   display: flex;
   align-items: center;
   gap: 8px;
+`;
+
+export const ProjectLink = styled.a`
+  text-decoration: none;
+  color: #667ba3;
+  margin-bottom: 16px;
 `;
 
 export const WindowContentWrapper = styled.div`

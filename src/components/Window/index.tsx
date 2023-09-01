@@ -6,6 +6,7 @@ import {
   HeaderButton,
   HeaderButtonWrapper,
   ProjectIcon,
+  ProjectLink,
   TagList,
   TitleWrapper,
   WindowContainer,
@@ -38,7 +39,9 @@ export const Window = ({ closeWindow, currentData }: WindowProps) => {
     isPersonal,
     company,
     tags,
+    link,
   } = currentData;
+  const hasLink = link && link.length > 0;
 
   return (
     <WindowContainer>
@@ -70,6 +73,7 @@ export const Window = ({ closeWindow, currentData }: WindowProps) => {
             <Tag text={tag} key={`${tag}_${idx}`} />
           ))}
         </TagList>
+        {hasLink && <ProjectLink href={`https://${link}`}>{link}</ProjectLink>}
         <MarkdownRenderer markdownContent={description} />
         {content}
       </WindowContentWrapper>
