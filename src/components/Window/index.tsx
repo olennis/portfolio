@@ -45,7 +45,6 @@ export const Window = ({ closeWindow, currentData }: WindowProps) => {
 
   return (
     <WindowContainer>
-      <h2 className="hidden_text">{"Donghun's Project"}</h2>
       <WindowHeader>
         <HeaderButtonWrapper>
           {BUTTONS.map((button) => (

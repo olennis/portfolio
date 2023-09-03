@@ -19,6 +19,7 @@ export const Dock = ({ openWindow, projectData }: DockProps) => {
     <DockWrapper
       onMouseMove={(e) => handlePageX(e.pageX)}
       onMouseLeave={() => handlePageX(Infinity)}>
+      <h2 className="hidden_text">{"Donghun's Projects"}</h2>
       {projectData.map((data) => (
         <DockIcon
           onClick={() => openWindow(data.id)}

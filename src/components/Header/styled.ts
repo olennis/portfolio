@@ -12,16 +12,11 @@ export const Header = styled.header`
   height: 28px;
 `;
 
-export const HeaderLeftWrapper = styled.div`
+export const HeaderLeftWrapper = styled.nav`
   display: flex;
   gap: 16px;
+  height: 28px;
   align-items: center;
-  span {
-    &:hover {
-      cursor: pointer;
-      font-weight: bold;
-    }
-  }
 `;
 
 export const HeaderRightWrapper = styled.div`
