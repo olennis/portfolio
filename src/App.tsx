@@ -48,10 +48,10 @@ export const App = () => {
         <>
           <Header />
           <main>
+            <Dock openWindow={openWindow} projectData={PROJECT_DATA} />
             {isWindowOpen && (
               <Window currentData={currentData} closeWindow={closeWindow} />
             )}
-            <Dock openWindow={openWindow} projectData={PROJECT_DATA} />
           </main>
         </>
       )}

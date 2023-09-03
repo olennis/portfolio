@@ -14,7 +14,7 @@ interface IntroProps {
 }
 
 export const Intro = ({ completeIntro }: IntroProps) => {
-  const [password, setPassword] = useState("");
+  const [password, setPassword] = useState<string>("");
 
   useEffect(() => {
     const typingPassword = setInterval(() => {
@@ -33,7 +33,7 @@ export const Intro = ({ completeIntro }: IntroProps) => {
     <main>
       <IntroWrapper>
         <IntroIcon />
-        <IntroName>Donghun</IntroName>
+        <IntroName>hello!</IntroName>
         <IntroInputWrapper>
           <IntroInput value={password} readOnly />
           <IntroInputArrowIcon>
