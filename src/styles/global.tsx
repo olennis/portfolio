@@ -109,7 +109,7 @@ const globalStyle = css`
     height: 100vh;
     line-height: 1;
     font-family: pretendard, Helvetica, Arial, sans-serif;
-    background-image: url("/images/background.png");
+    background-image: url("https://olennis.github.io/portfolio/images/background.png");
     background-repeat: no-repeat;
     background-size: cover;
 

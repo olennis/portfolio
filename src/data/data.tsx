@@ -26,7 +26,7 @@ export const PROJECT_DATA: Data[] = [
     id: 0,
     title: "DKT",
     duration: "21.05 ~ 21.12",
-    icon: "/images/dktechin.png",
+    icon: "https://olennis.github.io/portfolio/images/dktechin.png",
     isPersonal: false,
     company: "dk techin",
     tags: ["vue", "nuxt", "jQuery", "ejs"],
@@ -41,13 +41,13 @@ export const PROJECT_DATA: Data[] = [
     content: (
       <Wrapper>
         <img
-          src="/images/project/dkt1.png"
+          src="https://olennis.github.io/portfolio/images/project/dkt1.png"
           width="100%"
           height="auto"
           alt="kakao ent"
         />
         <img
-          src="/images/project/dkt2.png"
+          src="https://olennis.github.io/portfolio/images/project/dkt2.png"
           width="100%"
           height="auto"
           alt="kakao ent"
@@ -61,7 +61,7 @@ export const PROJECT_DATA: Data[] = [
     title: "URCLASS",
     link: "urclass.codestates.com",
     duration: "21.12 ~ 22.08",
-    icon: "/images/codestates.png",
+    icon: "https://olennis.github.io/portfolio/images/codestates.png",
     isPersonal: false,
     company: "codestates",
     tags: ["typescript", "react", "apollo", "graphQL", "styled-component"],
@@ -72,19 +72,19 @@ export const PROJECT_DATA: Data[] = [
     content: (
       <Wrapper>
         <img
-          src="/images/project/urclass1.png"
+          src="https://olennis.github.io/portfolio/images/project/urclass1.png"
           width="100%"
           height="auto"
           alt="urclass main"
         />
         <img
-          src="/images/project/urclass2.png"
+          src="https://olennis.github.io/portfolio/images/project/urclass2.png"
           width="100%"
           height="auto"
           alt="urclass content"
         />
         <img
-          src="/images/project/urclass3.png"
+          src="https://olennis.github.io/portfolio/images/project/urclass3.png"
           width="100%"
           height="auto"
           alt="urclass 째깍이"
@@ -96,7 +96,7 @@ export const PROJECT_DATA: Data[] = [
     id: 2,
     title: "COZ 어드민",
     duration: "21.12 ~ 22.08",
-    icon: "/images/urclass-admin.png",
+    icon: "https://olennis.github.io/portfolio/images/urclass-admin.png",
     isPersonal: false,
     company: "codestates",
     tags: ["typescript", "react", "apollo", "graphQL", "styled-component"],
@@ -113,7 +113,7 @@ export const PROJECT_DATA: Data[] = [
     title: "BOWL",
     link: "bowl.codestates.com",
     duration: "22.08 ~ 23.08",
-    icon: "/images/bowl.png",
+    icon: "https://olennis.github.io/portfolio/images/bowl.png",
     isPersonal: false,
     company: "codestates",
     tags: ["typescript", "nextJS", "react-query", "emotion"],
@@ -124,13 +124,13 @@ export const PROJECT_DATA: Data[] = [
     content: (
       <Wrapper>
         <img
-          src="/images/project/bowl1.png"
+          src="https://olennis.github.io/portfolio/images/project/bowl1.png"
           width="100%"
           height="auto"
           alt="bowl main"
         />
         <img
-          src="/images/project/bowl2.png"
+          src="https://olennis.github.io/portfolio/images/project/bowl2.png"
           width="100%"
           height="auto"
           alt="bowl review"
@@ -142,7 +142,7 @@ export const PROJECT_DATA: Data[] = [
     id: 4,
     title: "BOWL 어드민",
     duration: "22.08 ~ 23.08",
-    icon: "/images/bowl-admin.png",
+    icon: "https://olennis.github.io/portfolio/images/bowl-admin.png",
     isPersonal: false,
     company: "codestates",
     tags: ["typescript", "nextJS", "react-query", "emotion"],

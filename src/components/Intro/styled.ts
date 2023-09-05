@@ -21,7 +21,7 @@ export const IntroIcon = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -10px;
-  background-image: url("/images/Donghun.png");
+  background-image: url("images/Donghun.png");
 `;
 
 export const IntroName = styled.strong`
