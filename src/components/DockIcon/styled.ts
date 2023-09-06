@@ -10,6 +10,7 @@ export const IconContainer = styled.div`
 export const Icon = styled(motion.i)<{ src: string }>`
   position: relative;
   width: 40px;
+  cursor: pointer;
   aspect-ratio: 1/1;
   background-color: #fff;
   background-size: cover;

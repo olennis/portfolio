@@ -8,8 +8,7 @@ export const WindowContainer = styled.div`
   transform: translate(-50%, -50%);
   width: 100%;
   max-width: 760px;
-  min-height: 400px;
-  max-height: 1000px;
+  max-height: 70vh;
   background-color: black;
   border-radius: 8px;
   overflow: auto;
