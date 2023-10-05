@@ -1,46 +1,23 @@
-# Getting Started with Create React App
+# Donghun's portfolio v1.0.0
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[링크](https://github.com/olennis/portfolio)
 
-## Available Scripts
+인트로 페이지, 메인페이지로 구분 되어 있습니다. 
+인트로 페이지는 맥북을 켰을 때의 유저 화면을 구현했고 메인페이지는 맥북의 헤더와 독바를 카피해 맥북을 사용하는것과 같은 느낌을 주려고 했습니다. 
 
-In the project directory, you can run:
+<img width="1440" alt="image" src="https://github.com/olennis/portfolio/assets/59818904/653eba4b-56fa-4555-8dd9-e3790d20e87a">
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+메인페이지 헤더에서는 각 메뉴를 통해 github과 notion에 접근 가능하고, 연락을 위해 메일주소와 휴대폰 번호를 복사 할 수 있습니다. 
+독바에서는 저의 작업물들을 확인 할 수 있고, 재직한 회사의 보안에 영향을 주지 않는 선에서 제가 구현한 작업물들을 정리했습니다. 
+왼쪽부터 시간순으로 정리했고, 구분선으로 구분되어진 왼쪽에는 개인 프로젝트를 정리하고 오른쪽에는 회사 프로젝트를 정리할 계획입니다. 
+각 아이콘들을 클릭하여 프로젝트의 정보를 확인 할 수 있습니다. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<img width="1440" alt="image" src="https://github.com/olennis/portfolio/assets/59818904/1c6cc840-1e50-4a5b-bd8c-9658560cbb18">
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 1.0.0
+- 인트로 페이지 구현
+- 메인 페이지 구현(독바, 헤더, 모달)
+- 연락처 복사 기능 구현
+- 프로젝트 정리
