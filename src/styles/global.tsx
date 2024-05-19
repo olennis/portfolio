@@ -90,6 +90,7 @@ const globalStyle = css`
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    font-family: pretendard, Helvetica, Arial, sans-serif;
   }
   /* HTML5 display-role reset for older browsers */
   article,
