@@ -39,6 +39,20 @@ export const App = () => {
     setIsWindowOpen(false);
   };
 
+  useEffect(() => {
+  const handleKeyDown = (event: KeyboardEvent) => {
+    if (event.key === 'Escape') {
+      closeWindow();
+    }
+  };
+
+  window.addEventListener('keydown', handleKeyDown);
+
+  return () => {
+    window.removeEventListener('keydown', handleKeyDown);
+  };
+}, []);
+
   return (
     <div className="App">
       <GlobalStyle />
