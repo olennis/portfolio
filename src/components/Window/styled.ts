@@ -8,8 +8,7 @@ export const WindowContainer = styled.div`
   transform: translate(-50%, -50%);
   width: 100%;
   max-width: 760px;
-  min-height: 400px;
-  max-height: 1000px;
+  height: calc(100% - 240px);
   background-color: black;
   border-radius: 8px;
   overflow: auto;
@@ -20,6 +19,7 @@ export const WindowHeader = styled.header`
   left: 0;
   right: 0;
   top: 0;
+  z-index:10 ;
   display: flex;
   align-items: center;
   background-color: #3d4043;
