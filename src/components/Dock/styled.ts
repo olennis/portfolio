@@ -16,6 +16,7 @@ export const DockWrapper = styled.div`
 
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 12px;
+  z-index:10 ;
 `;
 
 export const Divider = styled.div`

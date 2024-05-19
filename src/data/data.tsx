@@ -44,13 +44,13 @@ export const PROJECT_DATA: Data[] = [
           src="https://olennis.github.io/portfolio/images/project/dkt1.png"
           width="100%"
           height="auto"
-          alt="kakao ent"
+          alt="kakao_ent"
         />
         <img
           src="https://olennis.github.io/portfolio/images/project/dkt2.png"
           width="100%"
           height="auto"
-          alt="kakao ent"
+          alt="kakao_ent"
         />
       </Wrapper>
     ),
@@ -75,19 +75,19 @@ export const PROJECT_DATA: Data[] = [
           src="https://olennis.github.io/portfolio/images/project/urclass1.png"
           width="100%"
           height="auto"
-          alt="urclass main"
+          alt="urclass_main"
         />
         <img
           src="https://olennis.github.io/portfolio/images/project/urclass2.png"
           width="100%"
           height="auto"
-          alt="urclass content"
+          alt="urclass_content"
         />
         <img
           src="https://olennis.github.io/portfolio/images/project/urclass3.png"
           width="100%"
           height="auto"
-          alt="urclass 째깍이"
+          alt="urclass_째깍이"
         />
       </Wrapper>
     ),
@@ -127,13 +127,13 @@ export const PROJECT_DATA: Data[] = [
           src="https://olennis.github.io/portfolio/images/project/bowl1.png"
           width="100%"
           height="auto"
-          alt="bowl main"
+          alt="bowl_main"
         />
         <img
           src="https://olennis.github.io/portfolio/images/project/bowl2.png"
           width="100%"
           height="auto"
-          alt="bowl review"
+          alt="bowl_review"
         />
       </Wrapper>
     ),
@@ -154,5 +154,40 @@ export const PROJECT_DATA: Data[] = [
     - 수강생 진도율 확인 기능 구현
     - xlsx, csv로 데이터 추출 기능 구현
     `,
+  },
+  {
+    id: 5,
+    title: "Spacecloud",
+    duration: "23.10 ~ 현재",
+    icon: "https://olennis.github.io/portfolio/images/spacecloud.png",
+    isPersonal: false,
+    company: "nspace",
+    tags: ["vue", "nuxt"],
+    description: `#### Introduce\n spacecloud는 공간 공유 플랫폼 입니다. 
+    \n 유저들은 spacecloud를 통해 사용 목적에 맞는 공간을 찾을 수 있고, 시간 및 패키지를 선택하여 예약 할 수 있습니다. 
+
+    - spacecloud guest 사이드 유지/보수
+    - 장기 미접속 유저 대상 이벤트 페이지 개발
+    - 업무 효율화를 위한 개발 환경 설정 (sentry)
+    - unit test case 작성
+    - 애플 로그인 기능 추가
+    - 레거시 코드 리팩토링
+    `,
+    content: (
+      <Wrapper>
+        <img
+              src="https://olennis.github.io/portfolio/images/project/spacecloud1.png"
+              width="100%"
+              height="auto"
+              alt="spacecloud_main"
+        />
+        <img
+              src="https://olennis.github.io/portfolio/images/project/spacecloud2.png"
+              width="100%"
+              height="auto"
+              alt="spacecloud_event_page"
+        />
+      </Wrapper>
+      )
   },
 ];
