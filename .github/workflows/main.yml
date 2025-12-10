@@ -21,15 +21,11 @@ jobs:
     - name: Install dependencies
       run: yarn install
 
-    - name: Set git user
-      run: |
-        git config --global user.name 'Donghun Kim'
-        git config --global user.email 'donghun0217@kakao.com'
+    - name: Build
+      run: yarn build
 
-    - name: Set GH_TOKEN
-      run: echo "GH_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
-
-    - name: Build and Deploy
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: yarn deploy
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
